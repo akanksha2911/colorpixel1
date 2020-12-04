@@ -1,11 +1,11 @@
 <?php
-//This script will handle login
+
 session_start();
 
 // check if the user is already logged in
 if(isset($_SESSION['username']))
 {
-    header("location:index.php");
+    header("location: index.php");
     exit;
 }
 require_once "config.php";
@@ -59,10 +59,7 @@ if(empty($err))
 
     }
 }    
-
-
 }
-
 
 ?>
 
@@ -75,11 +72,33 @@ if(empty($err))
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>PHP login system!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <title>Login</title>
   </head>
   <body>
-  
+
+  <header>
+        <div class=main>
+            <div>
+                <h1><span id=main1>C</span><span id=main2>o</span><span id=main3>l</span><span id=main4>o</span><span
+                        id=main5>r</span><span id=main6>P</span><span id=main7>i</span><span id=main8>x</span><span
+                        id=main9>e</span><span id=main10>l</span>
+                        <a href="./index.html" class="fa fa-paint-brush" ></a>
+                </h1>
+                <h3>Every color matters</h3>
+                
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="templates1.html">Templates</a></li>
+                <li><a href="themes1.html">Themes</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
+                <li><a href="https://localhost/login/login.php">Login</a></li>
+                <li><a href="https://localhost/login/register.php">Register</a></li>
+            </ul>
+        </div>
+    </header>
 
 <div class="container mt-4">
 <h3>Please Login Here:</h3>
@@ -98,7 +117,8 @@ if(empty($err))
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <div><button type="submit" class="btn btn-primary">Submit</button>&nbsp&nbsp<span class="in">Don't have an account?
+  <a href="https://localhost/login/register.php">Register</a></span></div>
 </form>
 
 

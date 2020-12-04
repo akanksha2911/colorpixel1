@@ -18,8 +18,8 @@
                         id=main9>e</span><span id=main10>l</span>
                         <a href="./index.html" class="fa fa-paint-brush" ></a>
                         <span class="shift1">
-                            <button class="log">Log In</button>
-                            <button class="log">Register</button>
+                            <button class="log" onclick="visitLoginPage();">Log In</button>
+                            <button class="log" onclick="visitRegisterPage();">Register</button>
                             <a class="fa fa-user-circle" href="C:\xampp\htdocs\login\login.php"></a></span></h1>
                 <h3>Every color matters</h3>
                 
@@ -107,8 +107,10 @@
 
     <div class="prg">
         <img src="./image/icon.png" class="icon">
-        <p class="detail2">Make your perfect color by our software</p><button class="b1"
-            onclick="location.href='https://drive.google.com/file/d/1Eotr_YwBKwNe3AMZVSniflTQdDdAXoBs/view?usp=sharing'">Download
+        <p class="detail2">Make your perfect color by our software<br>&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspColorPixel</p><button class="b1"
+            onclick="visitDownload();">Download
             Now<i class="fa fa-download"></i></button>
     </div>
     <div>
@@ -116,11 +118,27 @@
             <p></p>
         </div>
     </div>
-    <footer>
-        <h6>Follow us on</h6>
-        <a href="#" class="fa fa-facebook"></a>
+    <footer class="bg">
+        <div class="grid-container">
+            <div class="item1"><a href="about.html">About</a><br>
+                <a href="home.html" >Home</a><br>
+                <a href="templates1.html" style="color: black;">Templates</a><br>
+                <a href="themes1.html"style="color: black;"> Themes</a><br>
+                 <a href="downloads.html"style="color: black;">Downloads</a><br>
+                 <a href="login.php"style="color: black;">Login</a><br>
+            <a href="register.php"style="color: black;">Register</a><br></div>
+            <div class="item2">For further queries and feedback:<br>
+                 <i class="fa fa-envelope"></i> <a href = "mailto:colorpixel2911@gmail.com">Send Email</a><br>
+                 <i class="fa fa-phone"></i>7451048731 | 7453010872<br></div>
+          </div>
+        
+            
+           
+        </div>
+        <div class="bg1"> <p class="gap"> &copy; ColorPixel 2020</p></div>
+       <div class="bg2"> <a href="#" class="fa fa-facebook "></a>
         <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-instagram"></a></div>
     </footer>
 </body>
 <script>
@@ -154,8 +172,18 @@
     }
     function visitPageTemp()
     {window.location = "templates1.html";}
+    function visitDownload()
+    {window.location = "downloads.html";}
     function visitPageTheme()
     {window.location = "themes1.html";}
+    function visitLoginPage()
+    {
+        window.location = "https://localhost/login/login.php";
+    }
+    function visitRegisterPage()
+    {
+        window.location = "https://localhost/login/register.php";
+    }
 
 </script>
 
