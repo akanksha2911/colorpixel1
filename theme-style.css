@@ -88,17 +88,17 @@
   /* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
     .column5b {
-      width: 100%;
+      width: 20%;
     }
   }
   @media screen and (max-width: 600px) {
     .column7b {
-      width: 100%;
+      width: 14.2857%;
     }
   }
   @media screen and (max-width: 600px) {
     .column9b {
-      width: 100%;
+      width: 11.1111111%;
     }
   }
   .move{
