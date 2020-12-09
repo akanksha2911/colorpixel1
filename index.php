@@ -133,11 +133,25 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
             <p></p>
         </div>
     </div>
-    <footer>
-        <h6>Follow us on</h6>
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-instagram"></a>
+    <footer class="bg">
+        <div class="grid-container">
+            <div class="item1">
+                <a href="./about.html"style="color: black;">About</a><br>
+                <a href="./index.html" style="color: black;">Home</a><br>
+                <a href="./templates1.html" style="color: black;">Templates</a><br>
+                <a href="./themes1.html"style="color: black;"> Themes</a><br>
+                 <a href="./downloads.html"style="color: black;">Downloads</a><br>
+                 <a href="./login.php"style="color: black;">Login</a><br>
+            <a href="./register.php"style="color: black;">Register</a><br></div>
+            <div class="item2">For further queries and feedback:<br>
+                 <i class="fa fa-envelope"></i> <a href = "mailto:colorpixel2911@gmail.com" class="colp">&nbsp&nbspSend Email</a><br>
+                 <i class="fa fa-phone"></i>&nbsp&nbspCall Us<br></div>
+          </div>
+        </div>
+        <div class="bg1"> <p class="gap"> &copy; ColorPixel 2020</p></div>
+       <div class="bg2"> <i class="fa fa-facebook "></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i></div>
     </footer>
 </body>
 <script>
